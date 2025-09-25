@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #4CAF50, #2E7D32);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+    }
+
+    .container {
+      text-align: center;
+      background-color: rgba(0,0,0,0.1);
+      padding: 50px;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    .checkmark {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      display: inline-block;
+      border: 5px solid white;
+      position: relative;
+      margin-bottom: 30px;
+      animation: pop 0.6s ease-in-out;
+    }
+
+    .checkmark::after {
+      content: '';
+      position: absolute;
+      top: 26px;
+      left: 22px;
+      width: 25px;
+      height: 50px;
+      border-right: 5px solid white;
+      border-bottom: 5px solid white;
+      transform: rotate(45deg);
+      animation: draw 0.5s 0.6s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes draw {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes pop {
+      0% {
+        transform: scale(0.3);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: white;
+      color: #2E7D32;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    a.button:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="checkmark"></div>
+    <h1>Thank You!</h1>
+    <p>Your order has been placed successfully.</p>
+    <a href="index.html" class="button">Return to Home</a>
+  </div>
+
+</body>
+</html>

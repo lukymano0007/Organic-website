@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breakfast Foods</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fffdf7;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      align-items: center;
+      background: #ff9800;
+      padding: 15px 20px;
+      color: #fff;
+    }
+
+    .navbar h1 {
+      flex: 1;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+
+    .home-link {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    /* Container */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    /* Card */
+    .card {
+      background: #fffaf3;
+      border: 1px solid #ff9800;
+      border-radius: 12px;
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .card h2 {
+      margin: 10px 0 5px;
+      font-size: 1.3rem;
+      color: #333;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #e65100;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .card button {
+      padding: 10px 18px;
+      border: none;
+      background: #ff9800;
+      color: white;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .card button:hover {
+      background: #e68900;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html" class="home-link">🏠 Home</a>
+    <h1>Breakfast Foods</h1>
+  </nav>
+
+  <!-- Product Section -->
+  <div class="container">
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?pancakes" alt="Pancakes">
+      <h2>Pancakes</h2>
+      <p>Fluffy pancakes served with maple syrup.</p>
+      <span class="price">$4.50 / plate</span>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?cereal" alt="Cereal">
+      <h2>Cereal</h2>
+      <p>Crunchy breakfast cereal with milk.</p>
+      <span class="price">$3.20 / box</span>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?oatmeal" alt="Oatmeal">
+      <h2>Oatmeal</h2>
+      <p>Healthy oatmeal topped with fruits.</p>
+      <span class="price">$2.80 / bowl</span>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?eggs-toast" alt="Eggs and Toast">
+      <h2>Eggs & Toast</h2>
+      <p>Classic sunny side up eggs with toast.</p>
+      <span class="price">$3.50 / plate</span>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?smoothie" alt="Fruit Smoothie">
+      <h2>Fruit Smoothie</h2>
+      <p>Refreshing smoothies made with fresh fruits.</p>
+      <span class="price">$4.00 / glass</span>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?waffles" alt="Waffles">
+      <h2>Waffles</h2>
+      <p>Crispy golden waffles drizzled with honey.</p>
+      <span class="price">$4.20 / plate</span>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?bagel" alt="Bagels">
+      <h2>Bagels</h2>
+      <p>Freshly baked bagels with cream cheese spread.</p>
+      <span class="price">$2.50 / piece</span>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?granola" alt="Granola">
+      <h2>Granola</h2>
+      <p>Crunchy granola with nuts and dried fruits.</p>
+      <span class="price">$3.80 / pack</span>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?croissant" alt="Croissants">
+      <h2>Croissants</h2>
+      <p>Buttery croissants perfect for breakfast.</p>
+      <span class="price">$2.20 / piece</span>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?muffins" alt="Muffins">
+      <h2>Muffins</h2>
+      <p>Soft muffins with chocolate and blueberry flavors.</p>
+      <span class="price">$2.80 / piece</span>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dairy & Eggs - Organic Foods</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #fafafa;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(to right, #2196f3, #64b5f6);
+      color: white;
+    }
+    .header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .header p {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+    .header nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .header nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Product Grid */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card h2 {
+      margin: 15px 0 5px;
+      font-size: 1.3rem;
+      color: #333;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+      margin: 0 15px 10px;
+    }
+    .card .price {
+      display: block;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #1565c0;
+      margin-bottom: 10px;
+    }
+    .card button {
+      padding: 10px 20px;
+      border: none;
+      background: #2196f3;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+    .card button:hover {
+      background: #1565c0;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: #f1f1f1;
+      color: #555;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>🥛 Dairy & Eggs</h1>
+    <p>Fresh, organic, and farm-sourced dairy and egg products.</p>
+    <nav>
+      <a href="index.html">🏠 Home</a>
+    </nav>
+  </header>
+
+  <!-- Products -->
+  <section class="products">
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?milk" alt="Milk">
+      <h2>Organic Whole Milk</h2>
+      <p>Rich, creamy milk from grass-fed cows.</p>
+      <span class="price">$2.50 / liter</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?eggs" alt="Eggs">
+      <h2>Free-Range Eggs</h2>
+      <p>Farm fresh brown eggs full of protein.</p>
+      <span class="price">$3.00 / dozen</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?butter" alt="Butter">
+      <h2>Unsalted Butter</h2>
+      <p>Pure, creamy unsalted butter.</p>
+      <span class="price">$4.00 / pack</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?cheese" alt="Cheese">
+      <h2>Cheddar Cheese</h2>
+      <p>Aged cheddar with rich flavor.</p>
+      <span class="price">$5.50 / block</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?yogurt" alt="Yogurt">
+      <h2>Greek Yogurt</h2>
+      <p>Thick and creamy natural yogurt.</p>
+      <span class="price">$2.80 / cup</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?cream" alt="Cream">
+      <h2>Fresh Cream</h2>
+      <p>Rich cream for desserts and sauces.</p>
+      <span class="price">$3.20 / bottle</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?cottagecheese" alt="Cottage Cheese">
+      <h2>Cottage Cheese</h2>
+      <p>Light and creamy protein-rich cheese.</p>
+      <span class="price">$3.80 / tub</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?ghee" alt="Ghee">
+      <h2>Organic Ghee</h2>
+      <p>Golden clarified butter, Ayurvedic grade.</p>
+      <span class="price">$6.50 / jar</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?paneer" alt="Paneer">
+      <h2>Fresh Paneer</h2>
+      <p>Soft cottage cheese, perfect for curries.</p>
+      <span class="price">$5.00 / block</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?mozzarella" alt="Mozzarella">
+      <h2>Mozzarella Cheese</h2>
+      <p>Soft and stretchy mozzarella for pizzas.</p>
+      <span class="price">$4.80 / pack</span>
+      <button>Add to Cart</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Organic Foods. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

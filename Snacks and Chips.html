@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snacks & Chips</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fffef9;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      align-items: center;
+      background: #e53935;
+      padding: 15px 20px;
+      color: #fff;
+    }
+
+    .navbar h1 {
+      flex: 1;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+
+    .home-link {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    /* Product Grid */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    /* Product Card */
+    .card {
+      background: #fff5f5;
+      border: 1px solid #e53935;
+      border-radius: 12px;
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .card h2 {
+      margin: 10px 0 5px;
+      font-size: 1.3rem;
+      color: #333;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #b71c1c;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .card button {
+      padding: 10px 18px;
+      border: none;
+      background: #e53935;
+      color: white;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .card button:hover {
+      background: #c62828;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html" class="home-link">🏠 Home</a>
+    <h1>Snacks & Chips</h1>
+  </nav>
+
+  <!-- Products -->
+  <div class="container">
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?potato-chips" alt="Potato Chips">
+      <h2>Potato Chips</h2>
+      <p>Classic salted crispy potato chips.</p>
+      <span class="price">$2.50 / pack</span>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?nachos" alt="Nachos">
+      <h2>Nachos</h2>
+      <p>Crunchy nachos perfect with cheese dip.</p>
+      <span class="price">$3.00 / pack</span>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?popcorn" alt="Popcorn">
+      <h2>Popcorn</h2>
+      <p>Buttery and salted movie night popcorn.</p>
+      <span class="price">$1.80 / bag</span>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?pretzels" alt="Pretzels">
+      <h2>Pretzels</h2>
+      <p>Salted crunchy pretzel sticks.</p>
+      <span class="price">$2.20 / pack</span>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?crackers" alt="Crackers">
+      <h2>Cheese Crackers</h2>
+      <p>Cheesy baked crunchy crackers.</p>
+      <span class="price">$2.80 / box</span>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?tortilla-chips" alt="Tortilla Chips">
+      <h2>Tortilla Chips</h2>
+      <p>Perfect tortilla chips for dipping salsa.</p>
+      <span class="price">$3.20 / pack</span>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?chocolate-bar" alt="Chocolate Bars">
+      <h2>Chocolate Bars</h2>
+      <p>Rich creamy milk chocolate bars.</p>
+      <span class="price">$1.50 / bar</span>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?energy-bar" alt="Energy Bars">
+      <h2>Energy Bars</h2>
+      <p>Healthy energy bars with nuts & oats.</p>
+      <span class="price">$2.40 / bar</span>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?trail-mix" alt="Trail Mix">
+      <h2>Trail Mix</h2>
+      <p>Mix of nuts, dried fruits, and seeds.</p>
+      <span class="price">$4.50 / pack</span>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?chips" alt="Veggie Chips">
+      <h2>Veggie Chips</h2>
+      <p>Healthy chips made from mixed vegetables.</p>
+      <span class="price">$3.80 / pack</span>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+</body>
+</html>

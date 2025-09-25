@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frozen Foods - Organic Foods</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f9fcff;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #0288d1;
+      padding: 15px 20px;
+      text-align: left;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.2s ease;
+    }
+    .navbar a:hover {
+      color: #ffeb3b;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(to right, #03a9f4, #81d4fa);
+      color: white;
+    }
+    .header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .header p {
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+    }
+
+    /* Product Grid */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card h2 {
+      margin: 15px 0 5px;
+      font-size: 1.3rem;
+      color: #333;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+      margin: 0 15px 10px;
+    }
+    .card .price {
+      display: block;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #0277bd;
+      margin-bottom: 10px;
+    }
+    .card button {
+      padding: 10px 20px;
+      border: none;
+      background: #0288d1;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+    .card button:hover {
+      background: #01579b;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: #f1f1f1;
+      color: #555;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html">🏠 Home</a>
+  </nav>
+
+  <!-- Header -->
+  <header class="header">
+    <h1>❄️ Frozen Foods</h1>
+    <p>Convenient, fresh, and ready-to-cook frozen products.</p>
+  </header>
+
+  <!-- Products -->
+  <section class="products">
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?frozen-pizza" alt="Frozen Pizza">
+      <h2>Frozen Pizza</h2>
+      <p>Cheesy and ready-to-bake frozen pizzas.</p>
+      <span class="price">$5.50 each</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?frozen-vegetables" alt="Frozen Vegetables">
+      <h2>Frozen Vegetables</h2>
+      <p>Mixed vegetables for quick healthy meals.</p>
+      <span class="price">$3.00 / pack</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?ice-cream" alt="Ice Cream">
+      <h2>Ice Cream</h2>
+      <p>Delicious ice cream tubs in various flavors.</p>
+      <span class="price">$4.20 each</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?frozen-fish" alt="Frozen Fish Fillets">
+      <h2>Frozen Fish Fillets</h2>
+      <p>Freshly frozen fish fillets, easy to cook.</p>
+      <span class="price">$7.50 / pack</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?frozen-fruits" alt="Frozen Berries">
+      <h2>Frozen Berries</h2>
+      <p>Blueberries, raspberries, and strawberries mix.</p>
+      <span class="price">$6.00 / pack</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?frozen-chicken" alt="Frozen Chicken Nuggets">
+      <h2>Frozen Chicken Nuggets</h2>
+      <p>Crispy frozen nuggets for quick meals.</p>
+      <span class="price">$5.00 / box</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?frozen-peas" alt="Frozen Peas">
+      <h2>Frozen Green Peas</h2>
+      <p>Fresh frozen peas packed with nutrients.</p>
+      <span class="price">$2.80 / pack</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?frozen-dessert" alt="Frozen Desserts">
+      <h2>Frozen Desserts</h2>
+      <p>Ice cream cakes and frozen sweets.</p>
+      <span class="price">$8.00 each</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?frozen-bread" alt="Frozen Garlic Bread">
+      <h2>Frozen Garlic Bread</h2>
+      <p>Ready-to-bake garlic bread with butter.</p>
+      <span class="price">$3.50 / pack</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?frozen-meals" alt="Frozen Ready Meals">
+      <h2>Frozen Ready Meals</h2>
+      <p>Quick and easy microwaveable meals.</p>
+      <span class="price">$6.50 each</span>
+      <button>Add to Cart</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Organic Foods. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

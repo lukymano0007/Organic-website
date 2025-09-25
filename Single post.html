@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Organic Product - Single Post</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #e0f7e9, #ffffff);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+      animation: fadeIn 1.5s ease;
+    }
+
+    .product-img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,128,0,0.2);
+      transition: transform 0.5s ease;
+    }
+
+    .product-img:hover {
+      transform: scale(1.03);
+    }
+
+    .title {
+      font-size: 2.8rem;
+      margin: 25px 0 10px;
+      color: #2f7a4f;
+      animation: slideDown 1s ease-out;
+    }
+
+    .price {
+      font-size: 1.5rem;
+      color: #0a5a2b;
+      margin-bottom: 15px;
+      animation: fadeInUp 1s ease;
+    }
+
+    .description {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+      color: #444;
+      animation: fadeInUp 1.3s ease;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      background: #4caf50;
+      color: white;
+      font-size: 1rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      animation: pulse 2s infinite;
+    }
+
+    .btn:hover {
+      background: #388e3c;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes slideDown {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes pulse {
+      0%, 100% {transform: scale(1);}
+      50% {transform: scale(1.05);}
+    }
+
+    @media (max-width: 768px) {
+      .title { font-size: 2rem; }
+      .description { font-size: 1rem; }
+      .btn { width: 100%; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="https://source.unsplash.com/1000x500/?organic,vegetables" alt="Organic Product" class="product-img" />
+
+    <h1 class="title">Fresh Organic Vegetables Basket</h1>
+    <p class="price">₹699.00</p>
+    
+    <p class="description">
+      Experience the goodness of 100% organic farm-fresh vegetables. Grown without synthetic fertilizers or harmful pesticides, this basket includes tomatoes, carrots, cucumbers, spinach, and more — directly from the farm to your home.
+    </p>
+    
+    <a href="#" class="btn">Buy Now</a>
+  </div>
+
+</body>
+</html>

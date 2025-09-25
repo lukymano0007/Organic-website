@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canned Goods - Organic Foods</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #fdfcf7;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #546e7a;
+      padding: 15px 20px;
+      text-align: left;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.2s ease;
+    }
+    .navbar a:hover {
+      color: #ffca28;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(to right, #78909c, #b0bec5);
+      color: white;
+    }
+    .header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .header p {
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+    }
+
+    /* Product Grid */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card h2 {
+      margin: 15px 0 5px;
+      font-size: 1.3rem;
+      color: #333;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+      margin: 0 15px 10px;
+    }
+    .card .price {
+      display: block;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #37474f;
+      margin-bottom: 10px;
+    }
+    .card button {
+      padding: 10px 20px;
+      border: none;
+      background: #546e7a;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+    .card button:hover {
+      background: #37474f;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: #f1f1f1;
+      color: #555;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html">🏠 Home</a>
+  </nav>
+
+  <!-- Header -->
+  <header class="header">
+    <h1>🥫 Canned Goods</h1>
+    <p>Long-lasting and fresh canned items for your pantry.</p>
+  </header>
+
+  <!-- Products -->
+  <section class="products">
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?canned-tomatoes" alt="Canned Tomatoes">
+      <h2>Canned Tomatoes</h2>
+      <p>Rich and organic tomatoes for sauces.</p>
+      <span class="price">$2.50 / can</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?beans" alt="Canned Beans">
+      <h2>Canned Beans</h2>
+      <p>Protein-packed kidney and black beans.</p>
+      <span class="price">$1.80 / can</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?soup" alt="Canned Soup">
+      <h2>Canned Soup</h2>
+      <p>Hearty chicken and vegetable soups.</p>
+      <span class="price">$3.20 / can</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?corn" alt="Canned Corn">
+      <h2>Canned Corn</h2>
+      <p>Sweet corn kernels ready to serve.</p>
+      <span class="price">$2.00 / can</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?peas" alt="Canned Peas">
+      <h2>Canned Peas</h2>
+      <p>Fresh green peas preserved in brine.</p>
+      <span class="price">$1.90 / can</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?pineapple" alt="Canned Pineapple">
+      <h2>Canned Pineapple</h2>
+      <p>Sweet pineapple slices in syrup.</p>
+      <span class="price">$2.80 / can</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?fish" alt="Canned Tuna">
+      <h2>Canned Tuna</h2>
+      <p>Protein-rich tuna chunks in oil or brine.</p>
+      <span class="price">$3.50 / can</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?mushrooms" alt="Canned Mushrooms">
+      <h2>Canned Mushrooms</h2>
+      <p>Sliced mushrooms for pizza and pasta.</p>
+      <span class="price">$2.40 / can</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?fruit-salad" alt="Canned Fruit Mix">
+      <h2>Canned Fruit Mix</h2>
+      <p>Mixed tropical fruits in natural juice.</p>
+      <span class="price">$3.20 / can</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?evaporated-milk" alt="Evaporated Milk">
+      <h2>Evaporated Milk</h2>
+      <p>Creamy canned milk for desserts and tea.</p>
+      <span class="price">$2.60 / can</span>
+      <button>Add to Cart</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Organic Foods. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

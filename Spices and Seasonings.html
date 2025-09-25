@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spices & Seasonings</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fffdf6;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      align-items: center;
+      background: #8d6e63;
+      padding: 15px 20px;
+      color: #fff;
+    }
+
+    .navbar h1 {
+      flex: 1;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+
+    .home-link {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    /* Product Grid */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    /* Product Card */
+    .card {
+      background: #fff9f4;
+      border: 1px solid #8d6e63;
+      border-radius: 12px;
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .card h2 {
+      margin: 10px 0 5px;
+      font-size: 1.3rem;
+      color: #333;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #5d4037;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .card button {
+      padding: 10px 18px;
+      border: none;
+      background: #8d6e63;
+      color: white;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .card button:hover {
+      background: #6d4c41;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="index.html" class="home-link">🏠 Home</a>
+    <h1>Spices & Seasonings</h1>
+  </nav>
+
+  <!-- Products -->
+  <div class="container">
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?black-pepper" alt="Black Pepper">
+      <h2>Black Pepper</h2>
+      <p>Whole black peppercorns with bold flavor.</p>
+      <span class="price">$2.50 / 100g</span>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?turmeric" alt="Turmeric Powder">
+      <h2>Turmeric Powder</h2>
+      <p>Golden turmeric powder, rich in curcumin.</p>
+      <span class="price">$1.80 / 100g</span>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?cinnamon" alt="Cinnamon Sticks">
+      <h2>Cinnamon Sticks</h2>
+      <p>Sweet aromatic cinnamon for desserts.</p>
+      <span class="price">$3.20 / 100g</span>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?cloves" alt="Cloves">
+      <h2>Cloves</h2>
+      <p>Strongly flavored dried clove buds.</p>
+      <span class="price">$2.90 / 100g</span>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?cumin" alt="Cumin Seeds">
+      <h2>Cumin Seeds</h2>
+      <p>Earthy flavored whole cumin seeds.</p>
+      <span class="price">$2.10 / 100g</span>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?cardamom" alt="Cardamom">
+      <h2>Cardamom</h2>
+      <p>Green cardamom pods with sweet aroma.</p>
+      <span class="price">$4.50 / 50g</span>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?red-chili" alt="Red Chili Powder">
+      <h2>Red Chili Powder</h2>
+      <p>Spicy ground red chili for heat.</p>
+      <span class="price">$2.40 / 100g</span>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?oregano" alt="Oregano">
+      <h2>Oregano</h2>
+      <p>Dried oregano leaves for Italian dishes.</p>
+      <span class="price">$1.90 / 50g</span>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?bay-leaf" alt="Bay Leaves">
+      <h2>Bay Leaves</h2>
+      <p>Dried bay leaves for soups & stews.</p>
+      <span class="price">$1.50 / 50g</span>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?mustard-seeds" alt="Mustard Seeds">
+      <h2>Mustard Seeds</h2>
+      <p>Yellow mustard seeds for pickles & curries.</p>
+      <span class="price">$2.00 / 100g</span>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+</body>
+</html>

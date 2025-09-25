@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruits & Vegetables - Organic Foods</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #fafafa;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #388e3c;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 8px 15px;
+      border-radius: 6px;
+      transition: background 0.2s ease;
+    }
+    .navbar a:hover {
+      background: #2e7d32;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(to right, #4caf50, #81c784);
+      color: white;
+    }
+    .header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .header p {
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+    }
+
+    /* Product Grid */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card h2 {
+      margin: 15px 0 5px;
+      font-size: 1.3rem;
+      color: #333;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+      margin: 0 15px 10px;
+    }
+    .card .price {
+      display: block;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #2e7d32;
+      margin-bottom: 10px;
+    }
+    .card button {
+      padding: 10px 20px;
+      border: none;
+      background: #4caf50;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+    .card button:hover {
+      background: #388e3c;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: #f1f1f1;
+      color: #555;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html">🏠 Home</a>
+  </nav>
+
+  <!-- Header -->
+  <header class="header">
+    <h1>🍎 Organic Fruits & Vegetables</h1>
+    <p>Fresh, healthy, and straight from the farm to your table.</p>
+  </header>
+
+  <!-- Products -->
+  <section class="products">
+    <!-- Existing 4 -->
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?apple" alt="Apples">
+      <h2>Fresh Apples</h2>
+      <p>Sweet and crunchy organic apples.</p>
+      <span class="price">$3.50 / kg</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?tomato" alt="Tomatoes">
+      <h2>Organic Tomatoes</h2>
+      <p>Juicy red tomatoes, pesticide-free.</p>
+      <span class="price">$2.20 / kg</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?carrots" alt="Carrots">
+      <h2>Fresh Carrots</h2>
+      <p>Crunchy carrots rich in Vitamin A.</p>
+      <span class="price">$1.80 / kg</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?spinach" alt="Spinach">
+      <h2>Green Spinach</h2>
+      <p>Fresh leafy greens for salads & soups.</p>
+      <span class="price">$2.00 / bunch</span>
+      <button>Add to Cart</button>
+    </div>
+
+    <!-- 10 New Products -->
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?banana" alt="Bananas">
+      <h2>Bananas</h2>
+      <p>Sweet ripe bananas full of energy.</p>
+      <span class="price">$1.50 / dozen</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?grapes" alt="Grapes">
+      <h2>Grapes</h2>
+      <p>Fresh seedless grapes, great for snacking.</p>
+      <span class="price">$3.80 / kg</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?orange" alt="Oranges">
+      <h2>Oranges</h2>
+      <p>Juicy oranges packed with Vitamin C.</p>
+      <span class="price">$2.70 / kg</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?strawberry" alt="Strawberries">
+      <h2>Strawberries</h2>
+      <p>Fresh, sweet strawberries for desserts.</p>
+      <span class="price">$4.50 / box</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?mango" alt="Mangoes">
+      <h2>Mangoes</h2>
+      <p>Delicious tropical mangoes in season.</p>
+      <span class="price">$5.00 / kg</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?potato" alt="Potatoes">
+      <h2>Potatoes</h2>
+      <p>Organic golden potatoes for everyday cooking.</p>
+      <span class="price">$1.20 / kg</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?onion" alt="Onions">
+      <h2>Onions</h2>
+      <p>Fresh red onions with rich flavor.</p>
+      <span class="price">$1.50 / kg</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?cucumber" alt="Cucumbers">
+      <h2>Cucumbers</h2>
+      <p>Crisp cucumbers, perfect for salads.</p>
+      <span class="price">$2.10 / kg</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?broccoli" alt="Broccoli">
+      <h2>Broccoli</h2>
+      <p>Fresh broccoli florets rich in nutrients.</p>
+      <span class="price">$3.00 / kg</span>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://source.unsplash.com/300x200/?papaya" alt="Papaya">
+      <h2>Papaya</h2>
+      <p>Sweet papaya, excellent for digestion.</p>
+      <span class="price">$2.90 / kg</span>
+      <button>Add to Cart</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Organic Foods. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

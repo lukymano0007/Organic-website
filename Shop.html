@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organic Product Shop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f1f8f4;
+      color: #2e7d32;
+    }
+
+    header {
+      background: #388e3c;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      font-size: 2rem;
+      animation: slideDown 0.8s ease;
+    }
+
+    .search-bar {
+      max-width: 800px;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    .search-bar input {
+      width: 60%;
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      text-align: center;
+      padding: 16px;
+      animation: fadeUp 1s ease forwards;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .product-name {
+      font-size: 1.1rem;
+      margin: 12px 0 8px;
+      font-weight: bold;
+    }
+
+    .product-price {
+      color: #1b5e20;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .headline {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 40px 0 0;
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-40px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+<header>Organic Product Store</header>
+
+<div class="search-bar">
+  <input type="text" id="searchInput" onkeyup="searchProducts()" placeholder="Search for organic items...">
+</div>
+
+<div class="headline">Explore Our 100+ Organic Products</div>
+
+<div class="product-grid" id="productGrid">
+  <!-- Products generated with JavaScript -->
+</div>
+
+<script>
+  const productNames = Array.from({ length: 100 }, (_, i) => `Organic Item #${i + 1}`);
+
+  const productGrid = document.getElementById("productGrid");
+  productNames.forEach((name, index) => {
+    const card = document.createElement("div");
+    card.className = "product-card";
+    card.innerHTML = `
+      <img src="https://via.placeholder.com/300x180?text=${encodeURIComponent(name)}" alt="${name}">
+      <div class="product-name">${name}</div>
+      <div class="product-price">$${(Math.random() * 30 + 5).toFixed(2)}</div>
+    `;
+    productGrid.appendChild(card);
+  });
+
+  function searchProducts() {
+    const input = document.getElementById("searchInput").value.toLowerCase();
+    const cards = document.querySelectorAll(".product-card");
+    cards.forEach(card => {
+      const name = card.querySelector(".product-name").textContent.toLowerCase();
+      card.style.display = name.includes(input) ? "block" : "none";
+    });
+  }
+</script>
+
+</body>
+</html>

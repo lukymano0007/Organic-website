@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Organic Product Blogs</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0fdf4;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #2d6a4f, #40916c);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 2.5rem;
+      animation: fadeDown 1s ease-in-out;
+    }
+
+    .blog-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .blog-card {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      padding: 20px;
+      opacity: 0;
+    }
+
+    .blog-card:hover {
+      transform: scale(1.03);
+    }
+
+    .blog-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .blog-title {
+      font-size: 1.3rem;
+      margin: 15px 0 10px;
+      color: #2d6a4f;
+    }
+
+    .blog-text {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    /* Animations */
+    @keyframes fadeUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes zoomIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes slideLeft {
+      0% {
+        transform: translateX(50px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideRight {
+      0% {
+        transform: translateX(-50px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeDown {
+      0% {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes rotateIn {
+      0% {
+        transform: rotate(-5deg) scale(0.95);
+        opacity: 0;
+      }
+      100% {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+      }
+    }
+
+    .animate-1 { animation: fadeUp 1s forwards; }
+    .animate-2 { animation: zoomIn 1s forwards; }
+    .animate-3 { animation: slideLeft 1s forwards; }
+    .animate-4 { animation: slideRight 1s forwards; }
+    .animate-5 { animation: fadeUp 1s 0.5s forwards; }
+    .animate-6 { animation: zoomIn 1s 0.5s forwards; }
+    .animate-7 { animation: rotateIn 1s forwards; }
+    .animate-8 { animation: slideLeft 1s 0.5s forwards; }
+
+  </style>
+</head>
+<body>
+
+  <header>Organic Product Blog</header>
+
+  <div class="blog-container">
+    <div class="blog-card animate-1">
+      <img class="blog-image" src="https://source.unsplash.com/400x300/?organic,vegetables" alt="Blog 1">
+      <div class="blog-title">Benefits of Organic Vegetables</div>
+      <div class="blog-text">Learn how organic vegetables boost your health and immunity naturally.</div>
+    </div>
+
+    <div class="blog-card animate-2">
+      <img class="blog-image" src="https://source.unsplash.com/400x300/?organic,fruits" alt="Blog 2">
+      <div class="blog-title">Why Choose Organic Fruits?</div>
+      <div class="blog-text">Organic fruits are grown without chemicals. Discover their nutritional edge.</div>
+    </div>
+
+    <div class="blog-card animate-3">
+      <img class="blog-image" src="https://source.unsplash.com/400x300/?herbs,green" alt="Blog 3">
+      <div class="blog-title">Top 5 Healing Herbs</div>
+      <div class="blog-text">Explore the healing power of turmeric, basil, neem and more.</div>
+    </div>
+
+    <div class="blog-card animate-4">
+      <img class="blog-image" src="https://source.unsplash.com/400x300/?organic,tea" alt="Blog 4">
+      <div class="blog-title">Organic Herbal Teas</div>
+      <div class="blog-text">Soothe your body and mind with herbal teas rich in antioxidants.</div>
+    </div>
+
+    <div class="blog-card animate-5">
+      <img class="blog-image" src="https://source.unsplash.com/400x300/?organic,oil" alt="Blog 5">
+      <div class="blog-title">Cold-Pressed Organic Oils</div>
+      <div class="blog-text">Understand why cold-pressed oils are healthier and chemical-free.</div>
+    </div>
+
+    <div class="blog-card animate-6">
+      <img class="blog-image" src="https://source.unsplash.com/400x300/?organic,grains" alt="Blog 6">
+      <div class="blog-title">Whole Grains for Life</div>
+      <div class="blog-text">Discover the impact of eating whole, organic grains every day.</div>
+    </div>
+
+    <div class="blog-card animate-7">
+      <img class="blog-image" src="https://source.unsplash.com/400x300/?organic,cosmetics" alt="Blog 7">
+      <div class="blog-title">Natural Skincare Routine</div>
+      <div class="blog-text">Organic skincare products protect your skin with nature’s best.</div>
+    </div>
+
+    <div class="blog-card animate-8">
+      <img class="blog-image" src="https://source.unsplash.com/400x300/?organic,farming" alt="Blog 8">
+      <div class="blog-title">Sustainable Organic Farming</div>
+      <div class="blog-text">Know how organic farming helps preserve nature and soil quality.</div>
+    </div>
+  </div>
+
+</body>
+</html>

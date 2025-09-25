@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping Cart</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f7f7;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 26px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    .cart-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+    }
+
+    .cart-item img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-right: 20px;
+    }
+
+    .item-info {
+      flex: 2;
+      display: flex;
+      align-items: center;
+    }
+
+    .item-details h4 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .item-details p {
+      margin: 5px 0;
+      color: #666;
+    }
+
+    .quantity {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .quantity input {
+      width: 50px;
+      padding: 6px;
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .price {
+      flex: 1;
+      text-align: right;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .total {
+      text-align: right;
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .checkout-btn {
+      display: block;
+      margin-left: auto;
+      margin-top: 30px;
+      padding: 12px 25px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .checkout-btn:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <header>My Shopping Cart</header>
+
+  <div class="container">
+
+    <!-- Cart Item 1 -->
+    <div class="cart-item">
+      <div class="item-info">
+        <img src="https://via.placeholder.com/80" alt="Item 1">
+        <div class="item-details">
+          <h4>Fresh Carrots</h4>
+          <p>$2.50 each</p>
+        </div>
+      </div>
+      <div class="quantity">
+        <input type="number" value="2" min="1">
+      </div>
+      <div class="price">$5.00</div>
+    </div>
+
+    <!-- Cart Item 2 -->
+    <div class="cart-item">
+      <div class="item-info">
+        <img src="https://via.placeholder.com/80" alt="Item 2">
+        <div class="item-details">
+          <h4>Broccoli</h4>
+          <p>$3.00 each</p>
+        </div>
+      </div>
+      <div class="quantity">
+        <input type="number" value="1" min="1">
+      </div>
+      <div class="price">$3.00</div>
+    </div>
+
+    <!-- Total -->
+    <div class="total">Total: $8.00</div>
+
+    <!-- Checkout Button -->
+    <button class="checkout-btn">Proceed to Checkout</button>
+
+  </div>
+
+</body>
+</html>
