@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>About Us</title>
   <style>
+    /* ===== Global Styles ===== */
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,21 +13,58 @@
       overflow-x: hidden;
     }
 
+    /* ===== Navbar ===== */
+    nav {
+      background-color: #004d40;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffd54f;
+    }
+
+    /* ===== Header ===== */
     header {
       background-color: #00796B;
       color: white;
       padding: 40px 20px;
       text-align: center;
-      font-size: 32px;
       animation: fadeDown 1s ease-out;
     }
 
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #e0f2f1;
+    }
+
+    /* ===== Container ===== */
     .container {
       max-width: 1000px;
       margin: 50px auto;
       padding: 0 20px;
     }
 
+    /* ===== Section Cards ===== */
     section {
       margin-bottom: 60px;
       background-color: white;
@@ -38,13 +76,8 @@
       animation: fadeUp 1s ease forwards;
     }
 
-    section:nth-child(even) {
-      animation-delay: 0.3s;
-    }
-
-    section:nth-child(odd) {
-      animation-delay: 0.6s;
-    }
+    section:nth-child(even) { animation-delay: 0.3s; }
+    section:nth-child(odd) { animation-delay: 0.6s; }
 
     h2 {
       margin-top: 0;
@@ -54,50 +87,137 @@
     p {
       font-size: 17px;
       line-height: 1.6;
+      color: #555;
     }
 
+    /* ===== About Section with Image ===== */
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    .about-text h2 {
+      color: #388e3c;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .about-text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .about-img {
+      flex: 1;
+    }
+
+    .about-img img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* ===== Values Section ===== */
+    .values {
+      background-color: #f9f9f9;
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    .values h3 {
+      color: #2e7d32;
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+    }
+
+    .values-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .value-card {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .value-card h4 {
+      color: #388e3c;
+      margin-bottom: 10px;
+    }
+
+    .value-card p {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #eee;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 40px;
+    }
+
+    /* ===== Animations ===== */
     @keyframes fadeUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     @keyframes fadeDown {
-      from {
-        opacity: 0;
-        transform: translateY(-30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
+    /* ===== Responsive ===== */
     @media (max-width: 600px) {
-      header {
-        font-size: 24px;
-        padding: 30px 10px;
-      }
-
-      .container {
-        padding: 0 15px;
-      }
-
-      section {
-        padding: 20px;
-      }
+      nav { justify-content: center; }
+      header h1 { font-size: 2rem; }
+      header p { font-size: 1rem; }
+      .about-section { flex-direction: column; }
+      section { padding: 20px; }
     }
   </style>
 </head>
 <body>
 
-  <header>About Us</header>
+  <!-- ===== Navigation Bar ===== -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+  </nav>
 
+  <!-- ===== Page Header ===== -->
+  <header>
+    <h1>About Us</h1>
+    <p>Learn more about who we are and what we do</p>
+  </header>
+
+  <!-- ===== Content Sections ===== -->
   <div class="container">
-    <section>
-      <h2>Who We Are</h2>
-      <p>We are a passionate team dedicated to delivering the best products and services to our customers. With years of experience and a strong commitment to innovation, we continuously strive to exceed expectations.</p>
+    <section class="about-section">
+      <div class="about-text">
+        <h2>Who We Are</h2>
+        <p>We are a passionate team dedicated to delivering the best products and services to our customers. With years of experience and a strong commitment to innovation, we continuously strive to exceed expectations.</p>
+      </div>
+      <div class="about-img">
+        <img src="https://via.placeholder.com/450x300" alt="Our Team">
+      </div>
     </section>
 
     <section>
@@ -110,11 +230,34 @@
       <p>From premium goods to top-tier customer support, we offer a wide range of services tailored to meet diverse needs. Whether you're looking for innovation or reliability, we’ve got you covered.</p>
     </section>
 
+    <section class="values">
+      <h3>Our Core Values</h3>
+      <div class="values-grid">
+        <div class="value-card">
+          <h4>Innovation</h4>
+          <p>We embrace creativity and push boundaries to create unique solutions.</p>
+        </div>
+        <div class="value-card">
+          <h4>Sustainability</h4>
+          <p>We focus on eco-friendly practices that benefit our planet and communities.</p>
+        </div>
+        <div class="value-card">
+          <h4>Integrity</h4>
+          <p>We build trust with transparency, honesty, and respect for all.</p>
+        </div>
+      </div>
+    </section>
+
     <section>
       <h2>Join Us</h2>
       <p>Be a part of our journey! We’re always on the lookout for talented and driven individuals who want to make an impact. Reach out and let’s build something amazing together.</p>
     </section>
   </div>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    &copy; 2025 Your Company. All rights reserved.
+  </footer>
 
 </body>
 </html>
